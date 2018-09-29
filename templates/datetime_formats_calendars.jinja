@@ -1,0 +1,8 @@
+tests.push(function () {
+  return {
+    locale: '{{ locale }}',
+    id: 'locale_datetime_{{ locale }}_{{ type }}_{{ frm }}_{{ calendar }}',
+    code: "new Intl.DateTimeFormat('{{ locale }}-u-ca-{{ calendar }}', { {{ type }}: '{{ frm }}' }).format(test_date)",
+    result: new Intl.DateTimeFormat('{{ locale }}-u-ca-{{ calendar }}', { {{ type }}: '{{ frm }}' }).format(test_date)
+  };
+});

@@ -1,0 +1,8 @@
+tests.push(function () {
+  return {
+    locale: '{{ locale }}',
+    id: 'locale_datetime_{{ locale }}',
+    code: "new Intl.DateTimeFormat('{{ locale }}').format(test_date)",
+    result: new Intl.DateTimeFormat('{{ locale }}').format(test_date)
+  };
+});
