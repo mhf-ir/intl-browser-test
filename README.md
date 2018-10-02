@@ -12,6 +12,11 @@ But how can we standard interface with all major browsers?
 
 ## Found problems:
 
+Test date is:
+```js
+var test_date = new Date(Date.UTC(2018, 1, 1, 0, 0, 0, 0));
+```
+
 Open [diff.md](./diff.md) to see result.
 
 ## Todo
